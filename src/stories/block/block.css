@@ -1,0 +1,104 @@
+.hidden {
+  display: none;
+}
+
+.block-container {
+  width: 944px;
+  margin-left: -44px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: calc(96px + env(safe-area-inset-left));
+  padding-right: calc(96px + env(safe-area-inset-right));
+  padding-bottom: 30vh;
+  margin: 0 auto;
+}
+
+.cover {
+  height: 25vh;
+  background-color: lightcoral;
+}
+
+.block-zone {
+  position: relative;
+  max-width: 1488px;
+  width: 100%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-left: 44px;
+}
+
+.block-utils {
+  position: absolute;
+  height: 24px;
+  left: 0px;
+  top: 3px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: rgba(55, 53, 47, 0.3);
+  font-weight: 300;
+}
+
+.block-add-button {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 3px;
+}
+
+.block-add-button:hover {
+  background-color: rgba(187, 187, 187, 0.315);
+}
+
+.block-type-change-button {
+  width: 20px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 3px;
+}
+
+.block-type-change-button:hover {
+  background-color: rgba(187, 187, 187, 0.315);
+}
+
+.flex {
+  display: flex;
+}
+
+.bk-contentEditable {
+  padding: 3px 2px;
+  max-width: 100%;
+  width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  caret-color: rgb(55, 53,47);
+}
+
+.contents {
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.bk-contentEditable[contenteditable=true]:empty:hover:before {
+  color: rgba(255, 255, 255, 0.3);
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  font-size: 1em;
+}
+
+.bk-contentEditable[contenteditable=true]:focus {
+  outline: none;
+}
+
+.block-contents[contenteditable=true]:focus {
+  outline: none;
+}
